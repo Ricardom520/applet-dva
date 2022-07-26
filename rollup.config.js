@@ -53,17 +53,17 @@ export default [
           }
         })
     ])
-  },
-  {
-    input: config.input,
-    output: [
-      {
-        file: './output/index.esm.js',
-        format: 'esm',
-        banner: buildBanner('esm'),
-        sourcemap: false
-      }
-    ],
-    plugins: config.plugins
   }
+  // {
+  //   input: config.input,
+  //   output: [
+  //     {
+  //       file: './output/index.esm.js',
+  //       format: 'esm',
+  //       banner: buildBanner('esm'),
+  //       sourcemap: false
+  //     }
+  //   ],
+  //   plugins: config.plugins
+  // }
 ]
