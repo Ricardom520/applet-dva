@@ -28,7 +28,8 @@ const config = {
     json(),
     typescript({
       typescript: require('typescript')
-    })
+    }),
+    terser()
   ]
 }
 

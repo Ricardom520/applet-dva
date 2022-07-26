@@ -1,6 +1,6 @@
 {
   "name": "applets-dva",
-  "version": "1.0.6",
+  "version": "1.0.7",
   "description": "",
   "main": "index.js",
   "module": "output/index.esm.js",
@@ -8,10 +8,7 @@
   "eslintConfig": {
     "env": {
       "jest": true
-    },
-    "extends": [
-      "yyl-react"
-    ]
+    }
   },
   "eslintIgnore": [
     "/node_modules",
@@ -35,7 +32,6 @@
     "build": "cross-env NODE_ENV=production rollup --config ./rollup.config.js",
     "w": "rollup --watch --config ./rollup.config.js",
     "clear": "rimraf ./output",
-    "release": "yyr",
     "prepublishOnly": "npm run prettier & npm run build",
     "test": "cd ./test/case/base && npm run d",
     "install:test": "cd ./test/case/base && yarn install"

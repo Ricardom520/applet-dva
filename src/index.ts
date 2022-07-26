@@ -1,4 +1,5 @@
 import { Modal, Reducer, State, AnyAction, Effect, Dispatch } from './interface'
+export * from './interface'
 
 // store
 const createStore = (
